@@ -1,0 +1,41 @@
+.layout-menu {
+  background-color: #334056;
+  font-weight: 500;
+
+  // 修改AntD UI框架原生样式
+  &>.ant-menu-item,
+  .ant-menu-submenu-title {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+  }
+
+  .ant-menu-item:hover {
+    background-color: #283345 !important;
+  }
+
+  .ant-menu-inline,
+  .ant-menu-item-only-child {
+    background-color: #334056 !important;
+  }
+
+  .ant-menu-item-selected {
+    color: #599afe;
+    background-color: transparent;
+  }
+
+  
+
+}
+
+// 收缩后的样式修改
+.layout-menu.ant-menu-inline-collapsed {
+  width: 50px;
+  .ant-menu-item, .ant-menu-submenu-title {
+    .ant-menu-item-icon {
+      margin: 18px 5px;
+      font-size: 14px;
+    }
+  }
+}

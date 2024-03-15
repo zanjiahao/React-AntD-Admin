@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  a {
+    font-size: 14px;
+    color: #909399;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #909399;
+  }
+}

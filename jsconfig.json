@@ -1,0 +1,9 @@
+// 说明：VScode会自动读取 jsconfig.json 中的配置，让 vscode 知道 @ 就是src目录
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

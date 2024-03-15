@@ -1,0 +1,82 @@
+@import '@/styles/variables.module.scss';
+
+.right-menu {
+  display: flex;
+  width: auto;
+  height: 100%;
+  line-height: 50px;
+  color: #303133;
+  .user-name {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #303133;
+    // color: $toolHerClr;
+    white-space: nowrap;
+    vertical-align: bottom;
+  }
+  &:focus {
+    outline: none;
+  }
+  .right-menu-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 8px;
+    font-size: 18px;
+    color: #303133;
+    vertical-align: text-bottom;
+    &.hover-effect {
+      cursor: pointer;
+      transition: background 0.3s;
+      &:hover {
+        background: rgb(0 0 0 / 2.5%);
+      }
+    }
+  }
+  
+  .avatar-container {
+    margin-right: 30px;
+    .avatar-wrapper {
+      position: relative;
+      margin-top: 9px;
+      padding: 0 8px;
+      line-height: 32px;
+      .user-avatar {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      .icon-caret {
+        position: absolute;
+        top: 20px;
+        right: -10px;
+        font-size: 12px;
+        color: #303133;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// 将toolbar-dropdown设定为下拉根元素的类名称
+.toolbar-dropdown {
+  .ant-dropdown-menu-item {
+    .ant-dropdown-menu-title-content {
+      color: #606266;
+    }
+  }
+  .dropdown-svg {
+    font-size: 14px !important;
+    color: #606266;
+  }
+  .ant-dropdown-menu-item:hover {
+    color: #409eff;
+    background: #edf5ff !important;
+
+    .ant-dropdown-menu-title-content, .dropdown-svg {
+      color: #409eff;
+    }
+  }
+}
